@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
 import Searchbar from './Searchbar/Searchbar';
 import ImageGallery from './ImageGallery/ImageGallery';
-import { AppProvider, useApp } from './AppContext';
+import { AppProvider } from './AppContext';
 
 // import { ToastContainer } from 'react-toastify';
 
