@@ -25,7 +25,7 @@ const ImageGallery = () => {
           `https://pixabay.com/api/?q=${searchValue}&page=${page}&key=41658493-0c962b72c0029aba7b0f0613c&image_type=photo&orientation=horizontal&per_page=12`
         );
         if (response.data.hits.length !== 0) {
-          setItems([...items, ...response.data.hits]);
+          setItems(prevItems => prevItems.concat(response.data.hits));
           setStatus('resolved');
           setTotal(response.data.total);
         } else {
